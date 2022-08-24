@@ -17,7 +17,7 @@ def index():
            "</body>" \
            "</html>"
 
-    return fastapi.responses.HTMLResponse(content=body)
+    fastapi.responses.HTMLResponse(content=body)
 
 
 @api.get('/api/calculate')
